@@ -284,7 +284,6 @@ export class KiroLanguageModel implements LanguageModelV2 {
         requestBodyValues: payload as unknown as Record<string, unknown>,
         statusCode: response.status,
         responseBody: errorText,
-        isRetryable: response.status >= 500,
       })
     }
 
